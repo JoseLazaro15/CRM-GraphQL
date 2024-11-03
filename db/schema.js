@@ -1,8 +1,8 @@
-const { gql} = require('apollo-server');
+const { gql } = require('apollo-server');
 
 
 // Schema
-const typeDefs  = gql`
+const typeDefs = gql`
 
     type Usuario {
         id: ID
@@ -150,6 +150,6 @@ const typeDefs  = gql`
         
 
     }
-`;  
+`;
 
 module.exports = typeDefs;

@@ -1,29 +1,29 @@
 const mongoose = require('mongoose');
 
 const PedidoSchema = mongoose.Schema({
-    pedido:{
+    pedido: {
         type: Array,
         required: true
     },
-    total:{
+    total: {
         type: Number,
         required: true
     },
-    cliente:{
+    cliente: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'Clientes'
     },
-    vendedor:{
+    vendedor: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'Usuario'
     },
-    estado:{
+    estado: {
         type: String,
         default: "PENDIENTE"
     },
-    creado:{
+    creado: {
         type: Date,
         default: Date.now()
     }
