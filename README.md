@@ -43,14 +43,14 @@
    yarn install
 
 4. Configura las variables del entorno:
-   - Crea un archivo .env en la raiz del proyecto, con las siguientes variables:
+   Crea un archivo .env en la raiz del proyecto, con las siguientes variables:
    ```bash
    DB_MONGO=<tu cadena de conexión de MongoDB>
    SECRETA=<tu clave secreta para autenticación>
 
 ## USO
 Una vez el servidor este en funcionamiento, puedes acceder al playground de GraphQL en
-    ```bash
+    
     http://localhost:4000/graphql
 para realizar consultas y pruebas.
 
